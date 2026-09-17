@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Responsive Design System</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="navbar">
+      <a href="#" class="brand"> Design<span>Kit</span> </a>
+
+      <button
+        class="menu-toggle"
+        id="menuToggle"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="navMenu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="#foundations">Foundations</a>
+
+        <div class="dropdown">
+          <button
+            class="dropdown-button"
+            id="dropdownButton"
+            aria-expanded="false"
+          >
+            Components
+            <span>⌄</span>
+          </button>
+
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#buttons">Buttons</a>
+            <a href="#forms">Forms</a>
+            <a href="#cards">Cards</a>
+            <a href="#table">Table</a>
+          </div>
+        </div>
+
+        <a href="#accessibility">Accessibility</a>
+      </nav>
+    </header>
+
+    <!-- =========================
+         MAIN
+    ========================== -->
+
+    <main>
+      <!-- HERO -->
+
+      <section class="hero">
+        <div>
+          <span class="eyebrow"> FRONTEND COMPONENT LIBRARY </span>
+
+          <h1>
+            Responsive Design
+            <span>System.</span>
+          </h1>
+
+          <p>
+            A living style guide demonstrating reusable, responsive and
+            accessible interface components.
+          </p>
+
+          <a href="#buttons" class="primary-button"> Explore Components </a>
+        </div>
+      </section>
+
+      <!-- =========================
+             FOUNDATIONS
+        ========================== -->
+
+      <section class="section" id="foundations">
+        <div class="section-heading">
+          <span class="eyebrow"> 01 — FOUNDATIONS </span>
+
+          <h2>Design foundations</h2>
+
+          <p>Basic visual rules used throughout the component library.</p>
+        </div>
+
+        <div class="foundation-grid">
+          <div class="foundation-card">
+            <div class="color-box"></div>
+
+            <h3>Primary</h3>
+
+            <p>#171717</p>
+          </div>
+
+          <div class="foundation-card">
+            <div class="color-box secondary"></div>
+
+            <h3>Secondary</h3>
+
+            <p>#666666</p>
+          </div>
+
+          <div class="foundation-card">
+            <div class="color-box success"></div>
+
+            <h3>Success</h3>
+
+            <p>#217346</p>
+          </div>
+
+          <div class="foundation-card">
+            <div class="color-box danger"></div>
+
+            <h3>Error</h3>
+
+            <p>#b42318</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+             BUTTONS
+        ========================== -->
+
+      <section class="section" id="buttons">
+        <div class="section-heading">
+          <span class="eyebrow"> 02 — BUTTONS </span>
+
+          <h2>Buttons</h2>
+
+          <p>Reusable buttons with clear hover and focus states.</p>
+        </div>
+
+        <div class="component-box">
+          <button class="primary-button">Primary Button</button>
+
+          <button class="secondary-button">Secondary Button</button>
+
+          <button class="outline-button">Outline Button</button>
+
+          <button class="danger-button">Delete</button>
+
+          <button class="primary-button" disabled>Disabled</button>
+        </div>
+      </section>
+
+      <!-- =========================
+             FORMS
+        ========================== -->
+
+      <section class="section" id="forms">
+        <div class="section-heading">
+          <span class="eyebrow"> 03 — FORM ELEMENTS </span>
+
+          <h2>Form validation</h2>
+
+          <p>Accessible labels, validation messages and focus states.</p>
+        </div>
+
+        <form class="form-card" id="demoForm" novalidate>
+          <div class="form-group">
+            <label for="name"> Full Name </label>
+
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              required
+            />
+
+            <small class="error-message"> Name is required. </small>
+          </div>
+
+          <div class="form-group">
+            <label for="email"> Email Address </label>
+
+            <input
+              type="email"
+              id="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <small class="error-message"> Please enter a valid email. </small>
+          </div>
+
+          <div class="form-group">
+            <label for="message"> Message </label>
+
+            <textarea
+              id="message"
+              rows="4"
+              placeholder="Write your message..."
+              required
+            ></textarea>
+
+            <small class="error-message"> Message is required. </small>
+          </div>
+
+          <button class="primary-button" type="submit">Submit Form</button>
+        </form>
+      </section>
+
+      <!-- =========================
+             CARDS
+        ========================== -->
+
+      <section class="section" id="cards">
+        <div class="section-heading">
+          <span class="eyebrow"> 04 — CARDS </span>
+
+          <h2>Responsive cards</h2>
+        </div>
+
+        <div class="card-grid">
+          <article class="content-card">
+            <span class="badge success-badge"> Active </span>
+
+            <h3>Design System</h3>
+
+            <p>
+              A reusable collection of components, patterns and design rules.
+            </p>
+
+            <button class="outline-button">View Details</button>
+          </article>
+
+          <article class="content-card">
+            <span class="badge warning-badge"> Review </span>
+
+            <h3>Accessibility</h3>
+
+            <p>
+              Components designed for keyboard and assistive technology users.
+            </p>
+
+            <button class="outline-button">Learn More</button>
+          </article>
+
+          <article class="content-card">
+            <span class="badge neutral-badge"> Draft </span>
+
+            <h3>Responsive UI</h3>
+
+            <p>Layouts adapt smoothly to desktop, tablet and mobile screens.</p>
+
+            <button class="outline-button">Explore</button>
+          </article>
+        </div>
+      </section>
+
+      <!-- =========================
+             BADGES + AVATARS
+        ========================== -->
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="eyebrow"> 05 — STATUS COMPONENTS </span>
+
+          <h2>Badges & avatars</h2>
+        </div>
+
+        <div class="component-box">
+          <span class="badge success-badge"> Success </span>
+
+          <span class="badge warning-badge"> Warning </span>
+
+          <span class="badge danger-badge"> Error </span>
+
+          <span class="badge neutral-badge"> Neutral </span>
+        </div>
+
+        <div class="avatar-row">
+          <div class="avatar">DN</div>
+          <div class="avatar">AK</div>
+          <div class="avatar">SA</div>
+          <div class="avatar">MK</div>
+        </div>
+      </section>
+
+      <!-- =========================
+             MODAL
+        ========================== -->
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="eyebrow"> 06 — MODAL </span>
+
+          <h2>Accessible modal</h2>
+
+          <p>Includes keyboard focus management and scroll locking.</p>
+        </div>
+
+        <button class="primary-button" id="openModal">Open Modal</button>
+      </section>
+
+      <!-- MODAL OVERLAY -->
+
+      <div class="modal-overlay" id="modalOverlay" aria-hidden="true">
+        <div
+          class="modal"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="modalTitle"
+        >
+          <button class="modal-close" id="closeModal" aria-label="Close modal">
+            ×
+          </button>
+
+          <h2 id="modalTitle">Component Information</h2>
+
+          <p>
+            This modal demonstrates focus management, keyboard accessibility and
+            scroll locking.
+          </p>
+
+          <button class="primary-button" id="modalAction">Continue</button>
+        </div>
+      </div>
+
+      <!-- =========================
+             TOAST
+        ========================== -->
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="eyebrow"> 07 — TOAST </span>
+
+          <h2>Toast notification</h2>
+
+          <p>Temporary feedback for successful actions.</p>
+        </div>
+
+        <button class="primary-button" id="toastButton">
+          Show Success Toast
+        </button>
+      </section>
+
+      <div class="toast" id="toast" role="status" aria-live="polite">
+        ✓ Changes saved successfully.
+      </div>
+
+      <!-- =========================
+             DATA TABLE
+        ========================== -->
+
+      <section class="section" id="table">
+        <div class="section-heading">
+          <span class="eyebrow"> 08 — DATA TABLE </span>
+
+          <h2>Sortable data table</h2>
+
+          <p>Click column headings to sort the data.</p>
+        </div>
+
+        <div class="table-wrapper">
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <button class="sort-button" data-column="name">Name ↕</button>
+                </th>
+
+                <th>
+                  <button class="sort-button" data-column="role">Role ↕</button>
+                </th>
+
+                <th>
+                  <button class="sort-button" data-column="status">
+                    Status ↕
+                  </button>
+                </th>
+
+                <th>
+                  <button class="sort-button" data-column="score">
+                    Score ↕
+                  </button>
+                </th>
+              </tr>
+            </thead>
+
+            <tbody id="tableBody"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- =========================
+             PAGINATION
+        ========================== -->
+
+      <section class="section">
+        <div class="section-heading">
+          <span class="eyebrow"> 09 — PAGINATION </span>
+
+          <h2>Pagination</h2>
+        </div>
+
+        <div class="pagination">
+          <button id="previousPage">Previous</button>
+
+          <button class="page-number active-page">1</button>
+
+          <button class="page-number">2</button>
+
+          <button class="page-number">3</button>
+
+          <button id="nextPage">Next</button>
+        </div>
+      </section>
+
+      <!-- =========================
+             ACCESSIBILITY
+        ========================== -->
+
+      <section class="section" id="accessibility">
+        <div class="accessibility-card">
+          <span class="eyebrow"> 10 — ACCESSIBILITY </span>
+
+          <h2>Built for keyboard users.</h2>
+
+          <ul>
+            <li>Semantic HTML structure</li>
+
+            <li>Visible keyboard focus states</li>
+
+            <li>Accessible form labels</li>
+
+            <li>ARIA labels where required</li>
+
+            <li>Keyboard accessible modal</li>
+
+            <li>Responsive navigation</li>
+
+            <li>Accessible toast feedback</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+      <p>Responsive Design System</p>
+
+      <p>Created by Dua Noor</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
